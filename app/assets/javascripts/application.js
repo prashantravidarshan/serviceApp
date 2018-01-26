@@ -10,6 +10,24 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+
+//= require jquery
+//= require jquery-ui
+//= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
-//= require_tree .
+
+
+
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "70%";
+    // document.getElementById("flipkart-navbar").style.width = "50%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+}
